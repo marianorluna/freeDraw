@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARQFI | FreeDraw</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <section class="section">
+            <h1 id="main-title">FreeDraw</h1>
+            <p class="main-txt">
+                <input type="button" value="Limpiar" class="button" id="button-clear" />
+            </p>
+        </section>
+        <canvas id="canvas-area"></canvas>
+        <section class="section">
+            <p class="main-txt">
+                <input type="color" value="#DCDCDC" class="bcolor" id="button-color-fondo" onchange="cambiarColorFondo()" />
+                <select name="espesores" class="bcolor" id="list-thickness" onchange="cambiarEspesor()">
+                    <option value="1">Espesor 1</option> 
+                    <option value="2">Espesor 2</option> 
+                    <option value="4">Espesor 4</option>
+                    <option value="8">Espesor 8</option> 
+                    <option value="12">Espesor 12</option> 
+                    <option value="16">Espesor 16</option>
+                    <option value="20">Espesor 20</option>  
+                 </select>
+                <input type="color" value="#000000" class="bcolor" id="button-color-linea" onchange="cambiarColorLinea()"/>
+            </p>
+        </section>
+    </div>
+    <footer>
+        <a title="Mi sitio web" href="https://marianorluna.com" target="_blank">www.marianorluna.com</a>
+    </footer>
+    <script src="freedraw.js"></script>
+</body>
+</html>
